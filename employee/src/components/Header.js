@@ -3,8 +3,8 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="jumbotron bg-info text-center">
-      <h1 className="mx-auto text-white">Employee Directory</h1>
+    <header className="jumbotron bg-info text-center bg-dark">
+      <h1 className="mx-auto text-success">Employee Directory</h1>
       
     </header>
   );

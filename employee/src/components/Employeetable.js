@@ -10,14 +10,14 @@ const Employeetable = (props) => {
         <table className="container border-top border-bottom border-dark mb-5">
             <thead>
             <tr className="border-bottom border-dark">
-                <th className="border-right border-dark">Image</th>
-                <th className="border-right border-dark" style={{cursor: "pointer"}} onClick={props.sort}>Name {icon()}</th>
-                <th className="border-right border-dark">Phone</th>
-                <th className="border-right border-dark">Email</th>
-                <th className="border-right border-dark">City</th>
+                <th className="border-right border-dark text-center">Image</th>
+                <th className="border-right border-dark text-center" style={{cursor: "pointer"}} onClick={props.sort}>Name {icon()}</th>
+                <th className="border-right border-dark text-center">Phone</th>
+                <th className="border-right border-dark text-center">Email</th>
+                <th className="border-right border-dark text-center">City</th>
             </tr>
             </thead>
-            <tbody className="border-bottom border-right border-dark">
+            <tbody className="border-bottom border-right border-dark text-center">
             {props.employees && props.employees.map(employee => (
                 <tr key={employee.login.uuid} className="table-row border-bottom border-dark">
                     <td><img src={employee.picture.thumbnail} alt="headshot of {employee.name.first}" /></td>
