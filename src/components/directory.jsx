@@ -10,6 +10,7 @@ const Directory =()=> {
     const [activeList, setActiveList]= useState([])
     const [direction, setDirection]=useState('des')
     const [sorList, setSorList]=useState(false)
+
     useEffect(()=>{
         API.search()
         .then(data=> {
@@ -20,8 +21,10 @@ const Directory =()=> {
 
     const searchTermHandler =(term)=>{
         setSearchTerm(term)
+        console.log(searchTerm);
+        
         const filteredList = employeeList.filter(emp=>{
-            return emp.name.first.toLowerCase().includes(searchTerm.toLowerCase()) || emp.name.last.toLowerCase().includes(searchTerm.toLowerCase())
+            return emp.name.first.toLowerCase().includes(term.toLowerCase()) || emp.name.last.toLowerCase().includes(term.toLowerCase())
         })
         setActiveList(filteredList)
     }
