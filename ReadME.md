@@ -9,6 +9,9 @@
  
   Using an api load a list of employees and their information into a table. using react. when the name title is clicked, it rearranges the list in order of the first name ascending, and then descending when clicked again. also you can filter within the search bar to find specific names
 
+  [Heroku ](https://apple-sundae-75919.herokuapp.com)
+  [Repo](https://github.com/adriana-didden/Employee-Directory)
+
 ## Table of Contents 
  
 - [Installation](#Installation) 
